@@ -1,0 +1,24 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/contacts/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamPathTemplate": "/api/contacts/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPort": {
+        "Host": "contactservice",
+        "Port": 80
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/reports/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamPathTemplate": "/api/reports/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPort": {
+        "Host": "reportservice",
+        "Port": 80
+      }
+    }
+  ]
+}
