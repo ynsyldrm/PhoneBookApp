@@ -13,7 +13,7 @@ public class ReportProcessingService(
   {
     logger.LogInformation("Report processing service started");
 
-    //await kafkaConsumer.ConsumeAsync("report-requests", ProcessReportRequest, stoppingToken);
+    await kafkaConsumer.ConsumeAsync("report-requests", ProcessReportRequest, stoppingToken);
   }
 
   private async Task ProcessReportRequest(string message)
@@ -39,6 +39,3 @@ public class ReportProcessingService(
     }
   }
 }
-//```unu güncelleme
-//    }
-//}
