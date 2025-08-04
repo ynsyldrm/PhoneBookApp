@@ -5,9 +5,11 @@ VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
 		.gitignore = .gitignore
 		docker-compose.yml = docker-compose.yml
 		README.md = README.md
+		test-whole-app-script.sh = test-whole-app-script.sh
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
@@ -23,6 +25,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2561768C-F753-4A33-BA4C-06321BB84D82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactService.Tests", "tests\ContactService.Tests\ContactService.Tests.csproj", "{66B40EE1-2888-45C7-8BE2-EBCE76C05573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportService.Tests", "tests\ReportService.Tests\ReportService.Tests.csproj", "{99C4248D-D3EF-496C-8D91-DD040A1069EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +54,10 @@ Global
 		{66B40EE1-2888-45C7-8BE2-EBCE76C05573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66B40EE1-2888-45C7-8BE2-EBCE76C05573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66B40EE1-2888-45C7-8BE2-EBCE76C05573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C4248D-D3EF-496C-8D91-DD040A1069EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C4248D-D3EF-496C-8D91-DD040A1069EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C4248D-D3EF-496C-8D91-DD040A1069EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C4248D-D3EF-496C-8D91-DD040A1069EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{DDE6CF40-294F-4E6F-B880-CB27958D8532} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{52ADF232-1103-4F34-AA11-F5C6E945D102} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{66B40EE1-2888-45C7-8BE2-EBCE76C05573} = {2561768C-F753-4A33-BA4C-06321BB84D82}
+		{99C4248D-D3EF-496C-8D91-DD040A1069EF} = {2561768C-F753-4A33-BA4C-06321BB84D82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1F8EA86-C150-4BD7-8BBE-EEB911727977}
